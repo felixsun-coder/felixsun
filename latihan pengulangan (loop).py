@@ -20,7 +20,7 @@ def menambahkan_kontak () :
     email = input('masukkan email baru : ' ) 
     kontak_baru = {'nama' : nama , 'no.HP' : HP , 'email' : email} 
     kontak.append(kontak_baru)
-    print(f'kontak baru berhasil ditambahkan dengan nama {kontak_baru["nama"]}, no.HP {kontak_baru["no.HP"]}, email {kontak_baru["email"]} ')
+    print(f'kontak baru berhasil ditambahkan dengan nama : {kontak_baru["nama"]}, no.HP : {kontak_baru["no.HP"]}, email : {kontak_baru["email"]} ')
 
 def menghapus_kontak() :
     print('\ndaftar kontak')
@@ -53,8 +53,9 @@ while True :
         menghapus_kontak()
 
          
-    elif pilihan == '4' : 
+    elif pilihan == '4' :
+        print('anda telah keluar dari kontak')    
         break
     else : 
         print ('maaf pilihan anda tidak ada di menu kontak ')
-    
+   
